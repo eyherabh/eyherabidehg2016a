@@ -192,6 +192,7 @@ classdef Fig4code < handle
             % distributions
             %
             % ps1 is the probability of the first stimulus.
+            % isoctave should be set to True if the function is run in Octave
             
             ps2 = 1-ps1;
             pk1       = log(ps1/sqrt(2*pi));
@@ -274,6 +275,8 @@ classdef Fig4code < handle
             % rhos2 is the correlation coefficient of the responses of the neurons in the first
             % population elicited by circles (which in Section 3.6 were taken as equal).
             % thetaini is the initial value of theta for computing the communication information loss
+            % isoctave should be set to True if the function is run in Octave
+            
             if isoctave
                 fun = @(theta)(dinidlgausstheta2D(ps,rhos1,rhos2,theta)+dinidlgausstheta1D(1-ps,theta));
                 thetanew = nrm(fun,thetaini);
