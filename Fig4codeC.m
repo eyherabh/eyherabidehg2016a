@@ -1,8 +1,8 @@
 classdef Fig4codeC < handle
     % This software is provided as supplementary material for the following publication:
     %
-    % Eyherabide HG, Neural Stochastic Codes, Encoding and Decoding, arXiv (2017),
-    % https://arxiv.org/abs/1608.05501v2.
+    % Eyherabide HG, Disambiguating the role of noise correlations when decoding neural
+    % populations together, arXiv (2017), https://arxiv.org/abs/1608.05501v2.
     %
     % Should you use this code, I kindly request you to cite the aforementioened publication.
     %
